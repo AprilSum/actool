@@ -151,3 +151,7 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+    
+# Open the generated XLSX file
+import subprocess
+subprocess.Popen(["start", "output.xlsx"], shell=True)
